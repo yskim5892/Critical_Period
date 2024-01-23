@@ -1,0 +1,77 @@
+{
+    "env" : "ant_reacher",
+    
+    "visualize" : false,
+    "enable_time_stamp" : false,
+
+    "entity" : "yskim227",
+    "project" : "critical_period",
+
+    "load" : false,
+    "load_nth_episode" : -1,
+    "save" : true,
+    "save_every_n_episodes" : -1,
+    "start_epoch" : 0,
+
+    "algorithm" : "PPO",
+    "SAC_alpha" : 0.2,
+    "SAC_deterministic" : true,
+    "SAC_alpha_lr" : 1e-3,
+    "PPO_clip_grad": 0.5,
+    "PPO_clip_ratio": 0.2,
+    "PPO_ent_coef": 0.01,
+
+    "curriculum" : "12233",
+    "curriculum_interval" : 50000,
+
+    "reward_setting" : "dense",
+    "goal_reward" : 100,
+    "goal_penalty" : 1,
+    "goal_thr" : null,
+    "max_actions" : null,
+    "timesteps_per_action" : null,
+    "HER" : false,
+    "simple" : false,
+    "record_sharpness" : false,
+
+    "living_reward" : 0,
+    "timeout_penalty" : 1,
+    "dense_reward_scale" : 3, 
+
+    "n_goals" : 1,
+    "goals_min_dist" : 1.0,
+    "target_break" : true,
+    "nontarget_break" : true,
+
+    "scaling" : 8,
+    "fixed_goals" : false,
+    
+    "num_epochs" : 5000,
+    "num_train_episodes" : 50,
+    "num_test_episodes" : 50,
+    "num_updates" : 50,
+    "episodes_to_store" : 50,
+    "warmup_episodes" : 0,
+    "warmup_size" : 0,
+    "batch_size" : 128,
+    "buffer_size_ceiling" : 100000,
+    
+    "actor_lr" : 7e-4,
+    "critic_lr" : 7e-4,
+    "gamma" : 0.99,
+    "use_target" : false,
+    "tau" : 0.01,
+    "random_action_p" : 0.3,
+    "max_grad_norm" : 1,
+    "unbound_q" : false,
+    "gae_lambda" : 0.97,
+
+    "actor_model" : [64,64,64],
+    "critic_model" : [64,64,64],
+
+    "date" : null,
+    "experiment_name" : "default",
+    "config_id" : null,
+    "run_id" : null,
+    "gpu" : null
+}
